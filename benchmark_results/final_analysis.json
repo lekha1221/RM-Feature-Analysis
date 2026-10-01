@@ -1,0 +1,60 @@
+{
+  "fastest_overall": "duckdb_s3",
+  "winners_by_category": [
+    {
+      "category": "aggregations",
+      "library": "duckdb_s3",
+      "mean_avg_s": 0.8858227054685509,
+      "mean_mem": 4.158243497212728
+    },
+    {
+      "category": "chunked",
+      "library": "duckdb_s3",
+      "mean_avg_s": 22.2220081860607,
+      "mean_mem": 372.27655391693116
+    },
+    {
+      "category": "filtered",
+      "library": "duckdb_s3",
+      "mean_avg_s": 5.555903108598431,
+      "mean_mem": 359.9799531936645
+    },
+    {
+      "category": "large",
+      "library": "duckdb_s3",
+      "mean_avg_s": 11.842123582988279,
+      "mean_mem": 896.9575628280639
+    },
+    {
+      "category": "medium_ish",
+      "library": "duckdb_s3",
+      "mean_avg_s": 3.2278114418964834,
+      "mean_mem": 186.42412157058715
+    },
+    {
+      "category": "overall",
+      "library": "duckdb_s3",
+      "mean_avg_s": 9.735693237929889,
+      "mean_mem": 266.56779980129664
+    },
+    {
+      "category": "small_limits",
+      "library": "s3dataloader_athena",
+      "mean_avg_s": 77.90626776112865,
+      "mean_mem": 182.3621140797933
+    }
+  ],
+  "window": {
+    "start": "2025-06-01",
+    "end": "2025-06-07",
+    "rows": 243323
+  },
+  "active_libraries": [
+    "s3dataloader_athena",
+    "pyathena",
+    "boto3_athena",
+    "duckdb_s3",
+    "metabase"
+  ],
+  "recommendation_rule": "Prefer the library with best overall rank among Athena-backed adapters (s3dataloader_athena / pyathena / boto3_athena) for production defaults; treat duckdb_s3 as ad-hoc only if it wins speed but risks GET pressure; do not choose metabase if it fails, caps rows, or ranks last."
+}

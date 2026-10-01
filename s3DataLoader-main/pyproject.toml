@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "s3dataloader"
+version = "2.0.0"
+description = "Load Airflow ETL parquet dumps from S3 via DuckDB, Athena, or AWS Wrangler"
+requires-python = ">=3.10"
+dependencies = [
+  "duckdb>=1.0",
+  "boto3>=1.34",
+  "pandas>=2.0",
+  "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+# Required for the "athena" and "wrangler" engines.
+aws = ["awswrangler>=3.4"]
+
+[tool.setuptools.packages.find]
+include = ["dataSource*"]

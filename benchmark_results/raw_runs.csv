@@ -1,0 +1,648 @@
+library,scenario,run_idx,total_s,query_s,download_s,df_create_s,rows,cols,peak_mem_mb,cpu_percent,api_calls,retries,error,notes
+s3dataloader_athena,full_table_window,0,423.8462204170064,423.84621362500184,,,243323,92,1117.2191953659058,0.1,0,0,,awswrangler via DataLoader
+s3dataloader_athena,full_table_window,1,452.6427690839919,452.6427648329991,,,243323,92,1117.2181100845337,0.2,0,0,,awswrangler via DataLoader
+s3dataloader_athena,full_table_window,2,428.2423390420008,428.2423342500115,,,243323,92,1117.128589630127,0.1,0,0,,awswrangler via DataLoader
+s3dataloader_athena,full_table_window,3,1699.9760693749995,1699.976066874995,,,243323,92,1117.2245769500732,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,full_table_window,4,1191.4117202920024,1191.4117174170096,,,243323,92,1117.2146968841553,0.1,0,0,,awswrangler via DataLoader
+pyathena,full_table_window,0,687.9371584589971,19.628240709003876,661.4597640839929,6.849124374988605,243323,92,1956.015625,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,full_table_window,1,500.91534641700855,10.101141750012175,484.17393241600075,6.64025254099397,243323,92,1109.4260702133179,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,full_table_window,2,638.723081374992,9.975783625006443,621.8762054580002,6.871073540998623,243323,92,1109.4284505844116,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,full_table_window,3,325.8776389580016,,,,0,0,133.9028434753418,1.5,0,0,"OperationalError: Could not connect to the endpoint URL: ""https://athena.ap-south-1.amazonaws.com/""",
+pyathena,full_table_window,4,96.02672687500308,,,,0,0,0.271759033203125,0.4,0,0,"DatabaseError: Could not connect to the endpoint URL: ""https://athena.ap-south-1.amazonaws.com/""",
+boto3_athena,full_table_window,0,1208.8907265000016,9.543156500003533,1192.9569469169946,6.390570749994367,243323,92,1116.4341487884521,0.0,262,0,,StartQueryExecution + GetQueryResults
+boto3_athena,full_table_window,1,2460.744962666009,,,,0,0,240.83704566955566,0.0,0,0,"ReadTimeoutError: Read timeout on endpoint URL: ""https://athena.ap-south-1.amazonaws.com/""",
+boto3_athena,full_table_window,2,3814.4715923750045,,,,0,0,170.0791893005371,3.0,0,0,"EndpointConnectionError: Could not connect to the endpoint URL: ""https://athena.ap-south-1.amazonaws.com/""",
+boto3_athena,full_table_window,3,295.17244920899975,,,,0,0,0.2632923126220703,0.3,0,0,"EndpointConnectionError: Could not connect to the endpoint URL: ""https://athena.ap-south-1.amazonaws.com/""",
+s3dataloader_athena,full_table_window,0,435.6235128339904,435.6234907909966,,,243323,92,1120.9167051315308,0.1,0,0,,awswrangler via DataLoader
+s3dataloader_athena,full_table_window,1,192.47072958300123,,,,0,0,0.8230428695678711,0.0,0,0,"AthenaError: Athena query failed: Could not connect to the endpoint URL: ""https://athena.ap-south-1.amazonaws.com/""",
+s3dataloader_athena,full_table_window,2,196.48251724999864,,,,0,0,0.43304443359375,0.1,0,0,"AthenaError: Athena query failed: Could not connect to the endpoint URL: ""https://athena.ap-south-1.amazonaws.com/""",
+s3dataloader_athena,full_table_window,0,524.5618906249874,524.5618806669954,,,243323,92,1133.7317447662354,0.1,0,0,,awswrangler via DataLoader
+s3dataloader_athena,full_table_window,1,306.23878400000103,,,,0,0,111.45607566833496,0.1,0,0,"ConnectionClosedError: Connection was closed before we received a valid response from endpoint URL: ""https://athena.ap-south-1.amazonaws.com/"".",
+s3dataloader_athena,full_table_window,2,705.3569235829927,,,,0,0,451.90625,1.0,0,0,"EndpointConnectionError: Could not connect to the endpoint URL: ""https://athena.ap-south-1.amazonaws.com/""",
+s3dataloader_athena,full_table_window,3,709.0850312089897,709.0850272079988,,,243323,92,1720.296875,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,full_table_window,4,496.6350591669907,496.6350484579889,,,243323,92,1117.2208738327026,0.0,0,0,,awswrangler via DataLoader
+pyathena,full_table_window,0,1396.6558200409927,15.634374083005241,1374.4631970000046,6.558210583010805,243323,92,1109.465684890747,0.5,1,0,,default Cursor (GetQueryResults API)
+pyathena,full_table_window,1,721.927266499988,15.436592082987772,699.6046010839927,6.8860327919974225,243323,92,1109.4169960021973,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,full_table_window,2,493.9558189160016,10.93752195900015,476.43170837500656,6.586541625001701,243323,92,1109.4800720214844,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,full_table_window,3,498.37005691599916,11.041724250011612,480.83498966600746,6.493322124995757,243323,92,1109.433409690857,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,full_table_window,4,475.5044029580022,9.672576791999745,459.05001804200583,6.781789000000572,243323,92,1109.4669189453125,0.1,1,0,,default Cursor (GetQueryResults API)
+boto3_athena,full_table_window,0,388.09625550000055,8.453788915998302,373.11684737500036,6.525587916999939,243323,92,1116.4340238571167,0.5,260,0,,StartQueryExecution + GetQueryResults
+boto3_athena,full_table_window,1,424.8381618750136,7.893200833990704,410.2123663329985,6.7325535830023,243323,92,1116.4279985427856,0.0,259,0,,StartQueryExecution + GetQueryResults
+boto3_athena,full_table_window,2,430.31986850000976,9.180998832991463,414.36369887499313,6.775144458995783,243323,92,1116.4324007034302,0.1,261,0,,StartQueryExecution + GetQueryResults
+boto3_athena,full_table_window,3,401.9613826249988,8.148904750007205,387.5065216249932,6.3059342080086935,243323,92,1116.432809829712,0.0,259,0,,StartQueryExecution + GetQueryResults
+boto3_athena,full_table_window,4,430.2275842910167,8.31022633399698,415.09690500001307,6.820440916984808,243323,92,1116.3490209579468,0.0,260,0,,StartQueryExecution + GetQueryResults
+duckdb_s3,full_table_window,0,0.2953462919977028,,,,0,0,0.03717613220214844,0.1,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+duckdb_s3,full_table_window,1,0.20647587499115616,,,,0,0,0.046875,0.1,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+duckdb_s3,full_table_window,2,0.1900234589993488,,,,0,0,0.046875,0.2,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+duckdb_s3,full_table_window,3,0.1908152499818243,,,,0,0,0.036724090576171875,1.2,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+duckdb_s3,full_table_window,4,0.2246919579920359,,,,0,0,0.036815643310546875,0.1,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+metabase,full_table_window,0,2.3128064580087084,,,,0,0,0.1557788848876953,0.0,0,0,HTTPError: 400 Client Error: Bad Request for url: https://metabase.dev.asbl.in/api/dataset,
+metabase,full_table_window,1,2.187473666999722,,,,0,0,0.15504741668701172,0.0,0,0,HTTPError: 400 Client Error: Bad Request for url: https://metabase.dev.asbl.in/api/dataset,
+metabase,full_table_window,2,2.154514041991206,,,,0,0,0.1540374755859375,0.0,0,0,HTTPError: 400 Client Error: Bad Request for url: https://metabase.dev.asbl.in/api/dataset,
+metabase,full_table_window,3,2.0912853330082726,,,,0,0,0.1535348892211914,0.0,0,0,HTTPError: 400 Client Error: Bad Request for url: https://metabase.dev.asbl.in/api/dataset,
+metabase,full_table_window,4,2.130234207987087,,,,0,0,0.15435504913330078,1.1,0,0,HTTPError: 400 Client Error: Bad Request for url: https://metabase.dev.asbl.in/api/dataset,
+s3dataloader_athena,limit_1000,0,9.534725375007838,9.534724500001175,,,1000,92,26.966275215148926,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,limit_1000,1,10.310176083992701,10.310175042017363,,,1000,92,27.01510715484619,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,limit_1000,2,9.348847374989418,9.348846459004562,,,1000,92,27.08659553527832,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,limit_1000,3,9.53106129099615,9.531060333014466,,,1000,92,27.043230056762695,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,limit_1000,4,9.433371541992528,9.43337074998999,,,1000,92,27.09754180908203,0.0,0,0,,awswrangler via DataLoader
+pyathena,limit_1000,0,6.284327666973695,6.110455709014786,0.15052520798053592,0.02334370801690966,1000,92,26.57524013519287,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,limit_1000,1,5.3698706249997485,5.180389584013028,0.16563529201084748,0.02383754201582633,1000,92,26.581716537475586,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,limit_1000,2,6.175355667015538,6.010951166012092,0.14171166700543836,0.02269045900902711,1000,92,26.58526611328125,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,limit_1000,3,5.904189332999522,5.7118622090201825,0.1684972920047585,0.023827083001378924,1000,92,26.52040386199951,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,limit_1000,4,5.831034292001277,5.644876583013684,0.16226354200625792,0.02389229100663215,1000,92,26.628844261169434,0.0,1,0,,default Cursor (GetQueryResults API)
+boto3_athena,limit_1000,0,5.532543541979976,2.6234704999951646,2.8864577499916777,0.02260974998353049,1000,92,26.305248260498047,0.0,8,0,,StartQueryExecution + GetQueryResults
+boto3_athena,limit_1000,1,5.347973833006108,2.5659024580090772,2.7593514590116683,0.022715625003911555,1000,92,26.30587100982666,0.0,8,0,,StartQueryExecution + GetQueryResults
+boto3_athena,limit_1000,2,5.2248387089930475,2.5506270409969147,2.651205999980448,0.023001042020041496,1000,92,26.24835968017578,0.0,8,0,,StartQueryExecution + GetQueryResults
+boto3_athena,limit_1000,3,5.079415624990361,2.5693430000101216,2.487548249977408,0.0225159160036128,1000,92,26.306200981140137,0.0,8,0,,StartQueryExecution + GetQueryResults
+boto3_athena,limit_1000,4,5.68696204200387,3.1043297920259647,2.5597397919918876,0.022887083003297448,1000,92,26.244791984558105,0.0,9,0,,StartQueryExecution + GetQueryResults
+duckdb_s3,limit_1000,0,0.20134616599534638,,,,0,0,0.046875,2.8,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+duckdb_s3,limit_1000,1,0.17303283300134353,,,,0,0,0.03652381896972656,0.1,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+duckdb_s3,limit_1000,2,0.20849279200774617,,,,0,0,0.03697490692138672,0.1,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+duckdb_s3,limit_1000,3,0.21165470901178196,,,,0,0,0.03684043884277344,1.1,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+duckdb_s3,limit_1000,4,0.23132545899716206,,,,0,0,0.03684043884277344,1.1,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+metabase,limit_1000,0,2.2817432500014547,,,,0,0,0.15367698669433594,0.1,0,0,HTTPError: 400 Client Error: Bad Request for url: https://metabase.dev.asbl.in/api/dataset,
+metabase,limit_1000,1,1.8024356249952689,,,,0,0,0.15346431732177734,0.0,0,0,HTTPError: 400 Client Error: Bad Request for url: https://metabase.dev.asbl.in/api/dataset,
+metabase,limit_1000,2,2.109582083998248,,,,0,0,0.15342044830322266,0.0,0,0,HTTPError: 400 Client Error: Bad Request for url: https://metabase.dev.asbl.in/api/dataset,
+metabase,limit_1000,3,2.114903833018616,,,,0,0,0.15398597717285156,0.0,0,0,HTTPError: 400 Client Error: Bad Request for url: https://metabase.dev.asbl.in/api/dataset,
+metabase,limit_1000,4,2.0254164170182776,,,,0,0,0.15333843231201172,0.0,0,0,HTTPError: 400 Client Error: Bad Request for url: https://metabase.dev.asbl.in/api/dataset,
+s3dataloader_athena,limit_10000,0,30.53550324999378,30.535502291982993,,,10000,92,65.06988143920898,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,limit_10000,1,46.982508374989266,46.98250733301393,,,10000,92,64.05193996429443,0.1,0,0,,awswrangler via DataLoader
+s3dataloader_athena,limit_10000,2,49.494057417003205,49.494054832990514,,,10000,92,66.34733486175537,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,limit_10000,3,31.121591790986713,31.121590709022712,,,10000,92,65.61026096343994,0.1,0,0,,awswrangler via DataLoader
+s3dataloader_athena,limit_10000,4,25.460486708994722,25.460484250012087,,,10000,92,63.09235668182373,0.0,0,0,,awswrangler via DataLoader
+pyathena,limit_10000,0,27.119344250007998,5.909127582999645,21.053119541000342,0.1570867919945158,10000,92,52.715911865234375,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,limit_10000,1,26.575157916988246,5.631218208000064,20.789962500013644,0.15396908301045187,10000,92,52.865203857421875,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,limit_10000,2,22.279783208010485,5.303908375004539,16.795242917025462,0.18062329199165106,10000,92,53.20090389251709,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,limit_10000,3,21.912005958991358,5.142074083996704,16.580535249988316,0.18938804199569859,10000,92,52.15403461456299,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,limit_10000,4,22.65840399998706,5.496544333000202,16.98075308301486,0.1810985000047367,10000,92,52.33816337585449,0.0,1,0,,default Cursor (GetQueryResults API)
+boto3_athena,limit_10000,0,25.417950917006237,4.197775459004333,21.03613712498918,0.1840257500007283,10000,92,64.96797561645508,0.0,20,0,,StartQueryExecution + GetQueryResults
+boto3_athena,limit_10000,1,24.866529040999012,3.0815661670058034,21.59950608300278,0.1854509589902591,10000,92,64.00558567047119,1.0,18,0,,StartQueryExecution + GetQueryResults
+boto3_athena,limit_10000,2,22.774532082985388,3.3194004590041004,19.267070750007406,0.18805308398441412,10000,92,62.7235631942749,0.0,18,0,,StartQueryExecution + GetQueryResults
+boto3_athena,limit_10000,3,20.03726245800499,3.6887977909937035,16.20037662499817,0.14808379099122249,10000,92,66.0151948928833,0.0,19,0,,StartQueryExecution + GetQueryResults
+boto3_athena,limit_10000,4,19.680594665987883,3.2385197499825153,16.257268667017343,0.1847980419988744,10000,92,63.559152603149414,0.0,18,0,,StartQueryExecution + GetQueryResults
+duckdb_s3,limit_10000,0,0.19017345900647342,,,,0,0,0.078125,1.4,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+duckdb_s3,limit_10000,1,0.15528454197919928,,,,0,0,0.03648662567138672,0.1,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+duckdb_s3,limit_10000,2,0.15097416698699817,,,,0,0,0.036838531494140625,0.2,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+duckdb_s3,limit_10000,3,0.17639179198886268,,,,0,0,0.03688335418701172,1.2,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+duckdb_s3,limit_10000,4,0.16752070802613162,,,,0,0,0.03683185577392578,1.0,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+metabase,limit_10000,0,2.152521457988769,,,,0,0,0.15389728546142578,0.0,0,0,HTTPError: 400 Client Error: Bad Request for url: https://metabase.dev.asbl.in/api/dataset,
+metabase,limit_10000,1,2.1763361249759328,,,,0,0,0.1533041000366211,0.0,0,0,HTTPError: 400 Client Error: Bad Request for url: https://metabase.dev.asbl.in/api/dataset,
+metabase,limit_10000,2,2.3806639169924892,,,,0,0,0.15340709686279297,0.0,0,0,HTTPError: 400 Client Error: Bad Request for url: https://metabase.dev.asbl.in/api/dataset,
+metabase,limit_10000,3,2.180818459019065,,,,0,0,0.15419960021972656,0.0,0,0,HTTPError: 400 Client Error: Bad Request for url: https://metabase.dev.asbl.in/api/dataset,
+metabase,limit_10000,4,2.089191875013057,,,,0,0,0.15313339233398438,0.0,0,0,HTTPError: 400 Client Error: Bad Request for url: https://metabase.dev.asbl.in/api/dataset,
+s3dataloader_athena,limit_100000,0,198.4435434580082,198.44354095798917,,,100000,92,454.29091453552246,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,limit_100000,1,194.66414120799163,194.66413837499567,,,100000,92,454.52219581604004,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,limit_100000,2,178.63103429198964,178.63103208399843,,,100000,92,454.76879692077637,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,limit_100000,3,180.44746550000855,180.44746312499046,,,100000,92,458.3805627822876,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,limit_100000,4,184.65550274998532,184.65550091699697,,,100000,92,454.0887174606323,0.0,0,0,,awswrangler via DataLoader
+pyathena,limit_100000,0,270.6837512080092,8.624062540999148,259.8651530840143,2.1945184160140343,100000,92,465.6824359893799,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,limit_100000,1,197.30001779200393,9.72469433301012,185.56418804099667,2.0111179999948945,100000,92,456.95472621917725,1.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,limit_100000,2,353.8273649170005,8.467654291976942,343.27781641701586,2.0818794580118265,100000,92,450.95588302612305,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,limit_100000,3,222.78125354199437,9.668871249974472,210.90771891601617,2.204639625007985,100000,92,452.789963722229,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,limit_100000,4,206.63701562499045,7.346853791998001,196.86411891601165,2.4260167089814786,100000,92,451.48610496520996,0.0,1,0,,default Cursor (GetQueryResults API)
+boto3_athena,limit_100000,0,272.834851541993,6.348238667007536,264.2570307080168,2.2295727920136414,100000,92,452.92748069763184,0.1,112,0,,StartQueryExecution + GetQueryResults
+boto3_athena,limit_100000,1,268.86781470800634,5.514437000005273,261.03474545900826,2.318623667000793,100000,92,451.10725593566895,0.0,110,0,,StartQueryExecution + GetQueryResults
+boto3_athena,limit_100000,2,296.0189771669975,6.967610166990198,286.9872865000216,2.064071541011799,100000,92,463.8279056549072,0.0,111,0,,StartQueryExecution + GetQueryResults
+boto3_athena,limit_100000,3,202.53856587500195,6.007079207978677,194.31761216698214,2.2138636670133565,100000,92,452.6824598312378,0.0,111,0,,StartQueryExecution + GetQueryResults
+boto3_athena,limit_100000,4,195.65612795899506,6.9981128750077914,186.43864350000513,2.219354499975452,100000,92,456.01275062561035,0.0,112,0,,StartQueryExecution + GetQueryResults
+duckdb_s3,limit_100000,0,0.6243703329819255,,,,0,0,0.140625,1.0,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+duckdb_s3,limit_100000,1,0.5762488339969423,,,,0,0,0.037052154541015625,0.1,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+duckdb_s3,limit_100000,2,0.6152827920159325,,,,0,0,0.046875,0.1,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+duckdb_s3,limit_100000,3,0.5115912919864058,,,,0,0,0.036917686462402344,0.1,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+duckdb_s3,limit_100000,4,0.41707475000293925,,,,0,0,0.03690338134765625,0.1,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+metabase,limit_100000,0,2.5350584170082584,,,,0,0,0.15319061279296875,0.0,0,0,HTTPError: 400 Client Error: Bad Request for url: https://metabase.dev.asbl.in/api/dataset,
+metabase,limit_100000,1,2.8401991249993443,,,,0,0,0.1531391143798828,0.0,0,0,HTTPError: 400 Client Error: Bad Request for url: https://metabase.dev.asbl.in/api/dataset,
+metabase,limit_100000,2,2.7509220829815604,,,,0,0,0.15358352661132812,0.0,0,0,HTTPError: 400 Client Error: Bad Request for url: https://metabase.dev.asbl.in/api/dataset,
+metabase,limit_100000,3,2.703879707987653,,,,0,0,0.15339279174804688,0.0,0,0,HTTPError: 400 Client Error: Bad Request for url: https://metabase.dev.asbl.in/api/dataset,
+metabase,limit_100000,4,2.827099584013922,,,,0,0,0.15387725830078125,0.0,0,0,HTTPError: 400 Client Error: Bad Request for url: https://metabase.dev.asbl.in/api/dataset,
+s3dataloader_athena,projection_all_cols_100k,0,293.5872268330131,293.5872246249928,,,100000,92,455.16549015045166,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,projection_all_cols_100k,1,202.64232454198645,202.64232212500065,,,100000,92,452.84755992889404,0.1,0,0,,awswrangler via DataLoader
+s3dataloader_athena,projection_all_cols_100k,2,206.5733785830089,206.57337779199588,,,100000,92,450.8283939361572,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,projection_all_cols_100k,3,176.39019816700602,176.39019558302243,,,100000,92,452.28418159484863,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,projection_all_cols_100k,4,184.90846125001553,184.90845858299872,,,100000,92,460.73920726776123,0.0,0,0,,awswrangler via DataLoader
+pyathena,projection_all_cols_100k,0,194.09326791702188,8.63514275001944,183.2488633329922,2.209238416980952,100000,92,451.80083560943604,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,projection_all_cols_100k,1,193.7769790829916,8.579877332987962,183.01326441700803,2.1838258749921806,100000,92,453.8497371673584,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,projection_all_cols_100k,2,206.89067695799167,7.373963833000744,197.2784247919917,2.238275457988493,100000,92,450.79222297668457,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,projection_all_cols_100k,3,208.76847312500468,7.454243000014685,199.09259045802173,2.2216170410101768,100000,92,448.845516204834,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,projection_all_cols_100k,4,202.91512574997614,7.347161749989027,193.35806104098447,2.20988345798105,100000,92,451.65886783599854,0.0,1,0,,default Cursor (GetQueryResults API)
+boto3_athena,projection_all_cols_100k,0,216.8525869169971,7.819448624999495,206.81394866699702,2.2191771249927115,100000,92,454.20691871643066,0.1,116,0,,StartQueryExecution + GetQueryResults
+boto3_athena,projection_all_cols_100k,1,203.30388870899333,5.442331500002183,195.6442872089974,2.2172610000125133,100000,92,450.9470262527466,0.0,112,0,,StartQueryExecution + GetQueryResults
+boto3_athena,projection_all_cols_100k,2,304.4970670840121,7.199133124988293,295.13134799999534,2.166575917013688,100000,92,454.33610916137695,0.0,115,0,,StartQueryExecution + GetQueryResults
+boto3_athena,projection_all_cols_100k,3,329.6965737499995,3.565879750007298,323.9244562910171,2.2062286250002217,100000,92,465.8164234161377,0.0,106,0,,StartQueryExecution + GetQueryResults
+boto3_athena,projection_all_cols_100k,4,237.91906441701576,7.408926917007193,228.82153708298574,1.6885671659838408,100000,92,452.99099922180176,0.0,112,0,,StartQueryExecution + GetQueryResults
+duckdb_s3,projection_all_cols_100k,0,0.23683875001734123,,,,0,0,0.46875,0.1,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+duckdb_s3,projection_all_cols_100k,1,0.18018374999519438,,,,0,0,0.140625,1.0,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+duckdb_s3,projection_all_cols_100k,2,0.20295758300926536,,,,0,0,0.03712940216064453,0.0,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+duckdb_s3,projection_all_cols_100k,3,0.18984329199884087,,,,0,0,0.036952972412109375,1.1,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+duckdb_s3,projection_all_cols_100k,4,0.19963016698602587,,,,0,0,0.03690814971923828,0.1,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                      ^",
+metabase,projection_all_cols_100k,0,450.4088482079969,,,,0,0,0.10969161987304688,0.1,0,0,"ConnectTimeout: HTTPSConnectionPool(host='metabase.asbl.in', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='metabase.asbl.in', port=443) at 0x124888e10>, 'Connection to metabase.asbl.in timed out. (connect timeout=600)'))",
+metabase,projection_all_cols_100k,1,450.4629573339771,,,,0,0,11.8125,0.1,0,0,"ConnectTimeout: HTTPSConnectionPool(host='metabase.asbl.in', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='metabase.asbl.in', port=443) at 0x124889310>, 'Connection to metabase.asbl.in timed out. (connect timeout=600)'))",
+metabase,projection_all_cols_100k,2,450.60647595798946,,,,0,0,0.1097259521484375,0.1,0,0,"ConnectTimeout: HTTPSConnectionPool(host='metabase.asbl.in', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='metabase.asbl.in', port=443) at 0x12488a710>, 'Connection to metabase.asbl.in timed out. (connect timeout=600)'))",
+metabase,projection_all_cols_100k,3,382.5055602909997,,,,0,0,0.11002540588378906,0.0,0,0,"ConnectTimeout: HTTPSConnectionPool(host='metabase.asbl.in', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='metabase.asbl.in', port=443) at 0x124889f90>, 'Connection to metabase.asbl.in timed out. (connect timeout=600)'))",
+metabase,projection_all_cols_100k,4,451.6543648329971,,,,0,0,9.8125,0.0,0,0,"ConnectTimeout: HTTPSConnectionPool(host='metabase.asbl.in', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='metabase.asbl.in', port=443) at 0x12488b390>, 'Connection to metabase.asbl.in timed out. (connect timeout=600)'))",
+s3dataloader_athena,projection_subset_100k,0,31.371923667000374,31.371921499987366,,,100000,3,40.640625,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,projection_subset_100k,1,34.250235207990045,34.25023408298148,,,100000,3,28.575488090515137,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,projection_subset_100k,2,31.842563500016695,31.84256099999766,,,100000,3,28.608210563659668,0.1,0,0,,awswrangler via DataLoader
+s3dataloader_athena,projection_subset_100k,3,32.29260729200905,32.29260637500556,,,100000,3,28.599446296691895,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,projection_subset_100k,4,30.62596016700263,30.625959208002314,,,100000,3,28.60477924346924,0.1,0,0,,awswrangler via DataLoader
+pyathena,projection_subset_100k,0,45.84588170799543,3.8199688750028145,41.883348917006515,0.1425577919872012,100000,3,24.382923126220703,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,projection_subset_100k,1,41.198366917000385,2.9132700000191107,38.14184441699763,0.14324549998855218,100000,3,24.33174991607666,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,projection_subset_100k,2,40.45188100001542,4.019674959010445,36.291637249989435,0.14056187501410022,100000,3,24.389369010925293,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,projection_subset_100k,3,36.59770629100967,2.860055541008478,33.598446749994764,0.13919854100095108,100000,3,24.393234252929688,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,projection_subset_100k,4,35.85136749999947,2.9820496249885764,32.72542258299654,0.14388875002623536,100000,3,24.412675857543945,0.0,1,0,,default Cursor (GetQueryResults API)
+boto3_athena,projection_subset_100k,0,17.12961699999869,1.75466720899567,15.201304333022563,0.17363804200431332,100000,3,27.80397129058838,0.1,106,0,,StartQueryExecution + GetQueryResults
+boto3_athena,projection_subset_100k,1,17.85486525000306,1.7642296660051215,15.918719915993279,0.17190737498458475,100000,3,27.80220890045166,0.0,106,0,,StartQueryExecution + GetQueryResults
+boto3_athena,projection_subset_100k,2,17.41483641701052,1.7440567910089158,15.497512666974217,0.17325820800033398,100000,3,27.817082405090332,0.1,106,0,,StartQueryExecution + GetQueryResults
+boto3_athena,projection_subset_100k,3,17.090047583013074,1.7390943329955917,15.177781499980483,0.17316379200201482,100000,3,27.83667278289795,0.0,106,0,,StartQueryExecution + GetQueryResults
+boto3_athena,projection_subset_100k,4,17.571729999996023,1.7707161250000354,15.628222500003176,0.17278366701793857,100000,3,27.82904052734375,0.1,106,0,,StartQueryExecution + GetQueryResults
+duckdb_s3,projection_subset_100k,0,0.8431203749787528,0.8431189999973867,,,100000,3,12.8682861328125,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,projection_subset_100k,1,0.9667741250013933,0.966772999992827,,,100000,3,12.868684768676758,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,projection_subset_100k,2,0.9183517920027953,0.9183507499983534,,,100000,3,12.86807632446289,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,projection_subset_100k,3,0.923952624987578,0.9239514999790117,,,100000,3,12.86817741394043,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,projection_subset_100k,4,0.8463999590021558,0.8463989999727346,,,100000,3,12.86822509765625,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+metabase,projection_subset_100k,0,0.3570273749937769,,,,0,0,0.5834426879882812,0.0,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,projection_subset_100k,1,0.300100416992791,,,,0,0,0.58343505859375,0.1,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,projection_subset_100k,2,0.2822862079774495,,,,0,0,0.5830821990966797,0.9,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,projection_subset_100k,3,0.24880691699218005,,,,0,0,0.5829563140869141,0.0,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,projection_subset_100k,4,0.28646058301092125,,,,0,0,0.5831537246704102,0.1,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+s3dataloader_athena,filter_date_range,0,22.94636991698644,22.946368833014276,,,100000,92,192.92386436462402,0.1,0,0,,awswrangler via DataLoader
+s3dataloader_athena,filter_date_range,1,19.916277249983978,19.91627612497541,,,100000,92,190.3843297958374,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,filter_date_range,2,21.798617082997225,21.798616250016494,,,100000,92,193.15069007873535,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,filter_date_range,3,22.99197362497216,22.991972749994602,,,100000,92,192.54305839538574,0.1,0,0,,awswrangler via DataLoader
+s3dataloader_athena,filter_date_range,4,32.60338137499639,32.60338012498687,,,100000,92,193.1529426574707,0.0,0,0,,awswrangler via DataLoader
+pyathena,filter_date_range,0,174.62042150000343,8.82455645801383,163.63010850001592,2.1657270830182824,100000,92,451.4171371459961,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,filter_date_range,1,156.7008220840071,8.91443979201722,145.62976487498963,2.156603749986971,100000,92,452.69984912872314,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,filter_date_range,2,189.98604883399094,7.992626666993601,179.59636758299894,2.397041459014872,100000,92,453.0672035217285,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,filter_date_range,3,163.91304241699982,9.033344292023685,152.67334870799095,2.2063322920002975,100000,92,452.4405632019043,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,filter_date_range,4,173.9700022500183,8.888421834009932,162.96687725000083,2.1146836669940967,100000,92,456.73950481414795,0.0,1,0,,default Cursor (GetQueryResults API)
+boto3_athena,filter_date_range,0,127.97913225000957,6.134822082996834,119.56565175001742,2.2786490420112386,100000,92,450.66606521606445,0.0,114,0,,StartQueryExecution + GetQueryResults
+boto3_athena,filter_date_range,1,123.38745770900277,5.64904316700995,115.4612223750155,2.277168458007509,100000,92,450.26574516296387,0.1,113,0,,StartQueryExecution + GetQueryResults
+boto3_athena,filter_date_range,2,130.99998399999458,6.62025916701532,122.21950537501834,2.160212207993027,100000,92,457.9074869155884,0.0,115,0,,StartQueryExecution + GetQueryResults
+boto3_athena,filter_date_range,3,130.7627120000252,5.635538125003222,123.02275483301491,2.1044111250084825,100000,92,452.1946077346802,0.0,113,0,,StartQueryExecution + GetQueryResults
+boto3_athena,filter_date_range,4,124.51242420900962,7.270421374996658,115.0104623750085,2.231532166013494,100000,92,453.38144397735596,0.1,116,0,,StartQueryExecution + GetQueryResults
+duckdb_s3,filter_date_range,0,5.672154625004623,5.672153082996374,,,100000,92,359.98043155670166,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,filter_date_range,1,5.46436983399326,5.464367624983424,,,100000,92,359.98191833496094,0.1,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,filter_date_range,2,5.434662292012945,5.434660750004696,,,100000,92,359.9789571762085,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,filter_date_range,3,5.6463144999870565,5.646312208991731,,,100000,92,359.9793338775635,1.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,filter_date_range,4,5.562014291994274,5.5620124170091,,,100000,92,359.9791250228882,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+metabase,filter_date_range,0,0.29205024999100715,,,,0,0,0.5833330154418945,0.0,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,filter_date_range,1,0.3931032919790596,,,,0,0,0.583256721496582,0.0,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,filter_date_range,2,0.312596667004982,,,,0,0,0.5833673477172852,0.0,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,filter_date_range,3,0.30007254099473357,,,,0,0,0.5836400985717773,0.0,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,filter_date_range,4,0.3791568749875296,,,,0,0,0.5831918716430664,0.0,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+s3dataloader_athena,agg_count,0,3.233369749999838,3.2333686249912716,,,1,1,0.7903461456298828,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,agg_count,1,1.9904171249945648,1.9904152500093915,,,1,1,0.7651596069335938,0.1,0,0,,awswrangler via DataLoader
+s3dataloader_athena,agg_count,2,3.571034332999261,3.571023917000275,,,1,1,0.9166746139526367,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,agg_count,3,3.666594542009989,3.6665937080106232,,,1,1,0.7981643676757812,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,agg_count,4,2.278140791982878,2.2781396670034155,,,1,1,0.7602119445800781,0.0,0,0,,awswrangler via DataLoader
+pyathena,agg_count,0,2.3549426249810494,2.3537065830023494,2.920901170000434e-05,0.0012036249972879887,1,1,0.3415050506591797,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,agg_count,1,2.3902948330214713,2.389517750008963,1.4999997802078724e-05,0.0007601669931318611,1,1,0.34146595001220703,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,agg_count,2,2.4105392920027953,2.4099882079754025,1.0666000889614224e-05,0.000536374980583787,1,1,0.3434486389160156,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,agg_count,3,2.3743232499982696,2.373521792003885,1.3542012311518192e-05,0.00078616599785164,1,1,0.35746097564697266,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,agg_count,4,2.3244491670047864,2.323891000007279,8.874980267137289e-06,0.0005480409890878946,1,1,0.35892200469970703,0.0,1,0,,default Cursor (GetQueryResults API)
+boto3_athena,agg_count,0,1.8709375000034925,1.7662208749970887,0.10262999997939914,0.002074457996059209,1,1,0.038018226623535156,0.1,6,0,,StartQueryExecution + GetQueryResults
+boto3_athena,agg_count,1,2.427646291005658,2.3254221669922117,0.10049404099117965,0.0017187919875141233,1,1,0.038847923278808594,0.1,7,0,,StartQueryExecution + GetQueryResults
+boto3_athena,agg_count,2,1.9366009579971433,1.8111817500030156,0.12335987502592616,0.0020465840061660856,1,1,0.03770923614501953,1.0,6,0,,StartQueryExecution + GetQueryResults
+boto3_athena,agg_count,3,1.3523002080037259,1.251382625021506,0.09856450001825579,0.0023415829928126186,1,1,0.035430908203125,0.0,5,0,,StartQueryExecution + GetQueryResults
+boto3_athena,agg_count,4,1.8434957500139717,1.7504298329877201,0.0920263750012964,0.001031499996315688,1,1,0.036408424377441406,1.0,6,0,,StartQueryExecution + GetQueryResults
+duckdb_s3,agg_count,0,0.8149680409987923,0.8149672089784872,,,1,1,10.546875,0.1,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,agg_count,1,1.0202624159865081,1.0202613750007004,,,1,1,5.703125,0.1,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,agg_count,2,0.8456148330005817,0.8456138329929672,,,1,1,2.390625,0.1,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,agg_count,3,0.8335151659848634,0.8335142919968348,,,1,1,1.28125,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,agg_count,4,0.7968453750072513,0.7968445000005886,,,1,1,4.546875,1.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+metabase,agg_count,0,0.29386187499039806,,,,0,0,0.5832509994506836,0.1,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,agg_count,1,0.2908930830017198,,,,0,0,0.5833473205566406,0.0,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,agg_count,2,0.2863774999859743,,,,0,0,0.5831947326660156,0.0,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,agg_count,3,0.31990541599225253,,,,0,0,0.5832061767578125,0.0,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,agg_count,4,0.29265387501800433,,,,0,0,0.5833091735839844,0.0,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+s3dataloader_athena,agg_minmax,0,2.0525888330012094,2.0525880829954986,,,1,2,0.8824701309204102,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,agg_minmax,1,3.219552874972578,3.219552084017778,,,1,2,0.8731002807617188,0.1,0,0,,awswrangler via DataLoader
+s3dataloader_athena,agg_minmax,2,2.0724021249916404,2.0724012080172542,,,1,2,0.7649126052856445,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,agg_minmax,3,3.3327169999829493,3.3327152080019005,,,1,2,0.9006547927856445,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,agg_minmax,4,3.250331957999151,3.250331165996613,,,1,2,0.9024019241333008,0.1,0,0,,awswrangler via DataLoader
+pyathena,agg_minmax,0,2.3389542500081006,2.3371933750167955,2.300000051036477e-05,0.001734084013151005,1,2,0.3387031555175781,1.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,agg_minmax,1,2.3659414580033626,2.3646794999949634,1.5124998753890395e-05,0.0012449999921955168,1,2,0.3430957794189453,1.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,agg_minmax,2,2.337865541980136,2.3359433749865275,2.316699828952551e-05,0.0018946250202134252,1,2,0.3430366516113281,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,agg_minmax,3,2.357309000013629,2.3552598750102334,2.187499194405973e-05,0.0020234999828971922,1,2,0.34185218811035156,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,agg_minmax,4,1.3199434169800952,1.3178519590001088,2.4125009076669812e-05,0.002063083025859669,1,2,0.3400754928588867,1.0,1,0,,default Cursor (GetQueryResults API)
+boto3_athena,agg_minmax,0,1.864110708993394,1.7632453330152202,0.0987557909975294,0.002101082995068282,1,2,0.036823272705078125,1.1,6,0,,StartQueryExecution + GetQueryResults
+boto3_athena,agg_minmax,1,1.8749007910082582,1.7487433329806663,0.12415116699412465,0.001996249979129061,1,2,0.03726959228515625,0.0,6,0,,StartQueryExecution + GetQueryResults
+boto3_athena,agg_minmax,2,1.8837729999795556,1.785610250022728,0.09667466700193472,0.0014790419954806566,1,2,0.036643028259277344,1.0,6,0,,StartQueryExecution + GetQueryResults
+boto3_athena,agg_minmax,3,1.860655417025555,1.7648156250070315,0.09433958301087841,0.001492333016358316,1,2,0.03655052185058594,0.1,6,0,,StartQueryExecution + GetQueryResults
+boto3_athena,agg_minmax,4,1.8912106249772478,1.7662583749915939,0.12324004198308103,0.001705542003037408,1,2,0.03618812561035156,0.1,6,0,,StartQueryExecution + GetQueryResults
+duckdb_s3,agg_minmax,0,0.7969702499976847,0.7969693329941947,,,1,2,1.4375,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,agg_minmax,1,0.7936950839939527,0.7936941249936353,,,1,2,0.07240772247314453,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,agg_minmax,2,1.4227882499981206,1.422787374991458,,,1,2,0.921875,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,agg_minmax,3,0.821787916996982,0.8217867919884156,,,1,2,0.07249736785888672,0.1,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,agg_minmax,4,0.8763355000119191,0.8763346250052564,,,1,2,0.07249736785888672,0.1,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+metabase,agg_minmax,0,0.30964829100412317,,,,0,0,0.5839080810546875,0.0,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,agg_minmax,1,0.2531917079759296,,,,0,0,0.5833520889282227,0.1,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,agg_minmax,2,0.2577580420183949,,,,0,0,0.583378791809082,0.0,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,agg_minmax,3,0.24014062498463318,,,,0,0,0.583404541015625,0.1,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,agg_minmax,4,0.2999173339921981,,,,0,0,0.583221435546875,0.1,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+s3dataloader_athena,agg_distinct_visitor,0,3.123114165995503,3.123113582987571,,,1,1,0.7125310897827148,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,agg_distinct_visitor,1,3.2187031670182478,3.2187023750157095,,,1,1,0.8734378814697266,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,agg_distinct_visitor,2,3.1337289580260403,3.1337280420120806,,,1,1,0.8727006912231445,0.1,0,0,,awswrangler via DataLoader
+s3dataloader_athena,agg_distinct_visitor,3,2.030350916000316,2.0303499169822317,,,1,1,0.5647783279418945,1.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,agg_distinct_visitor,4,3.1396507080062293,3.139649749995442,,,1,1,0.8730878829956055,0.0,0,0,,awswrangler via DataLoader
+pyathena,agg_distinct_visitor,0,2.320803208014695,2.320290208008373,9.333016350865364e-06,0.0005026249855291098,1,1,0.3411712646484375,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,agg_distinct_visitor,1,3.3717391659738496,3.3707745000137947,2.016598591580987e-05,0.0009411670034751296,1,1,0.34386539459228516,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,agg_distinct_visitor,2,2.325225500011584,2.3239623330009636,2.4667009711265564e-05,0.0012349590251687914,1,1,0.3431081771850586,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,agg_distinct_visitor,3,2.338535624992801,2.3377187500009313,1.4457997167482972e-05,0.0008008749864529818,1,1,0.34540653228759766,1.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,agg_distinct_visitor,4,2.3246284589986317,2.322980292025022,2.1957996068522334e-05,0.001622709009097889,1,1,0.35480594635009766,0.0,1,0,,default Cursor (GetQueryResults API)
+boto3_athena,agg_distinct_visitor,0,1.882926165999379,1.7654654170037247,0.11665220800205134,0.0008037090010475367,1,1,0.03696441650390625,0.0,6,0,,StartQueryExecution + GetQueryResults
+boto3_athena,agg_distinct_visitor,1,1.8865863750106655,1.7862246249860618,0.09849808400031179,0.0018562499899417162,1,1,0.03623771667480469,0.0,6,0,,StartQueryExecution + GetQueryResults
+boto3_athena,agg_distinct_visitor,2,1.3214182079827879,1.2224446250183973,0.09685341600561514,0.0021101250022184104,1,1,0.03485393524169922,0.1,5,0,,StartQueryExecution + GetQueryResults
+boto3_athena,agg_distinct_visitor,3,1.8456044580088928,1.750292917015031,0.09413679200224578,0.0011679999879561365,1,1,0.03619384765625,0.1,6,0,,StartQueryExecution + GetQueryResults
+boto3_athena,agg_distinct_visitor,4,1.8311831660103053,1.7344902500044554,0.09483916699537076,0.0018469999777153134,1,1,0.037346839904785156,0.0,6,0,,StartQueryExecution + GetQueryResults
+duckdb_s3,agg_distinct_visitor,0,0.8469591659959406,0.8469582499819808,,,1,1,9.78125,0.1,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,agg_distinct_visitor,1,0.8931238750228658,0.8931230000162032,,,1,1,4.09375,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,agg_distinct_visitor,2,0.7813440840109251,0.7813432090042625,,,1,1,15.5,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,agg_distinct_visitor,3,0.8868537500093225,0.8868529169994872,,,1,1,1.46875,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,agg_distinct_visitor,4,0.8562768750125542,0.8562757920008153,,,1,1,4.484375,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+metabase,agg_distinct_visitor,0,0.28485383398947306,,,,0,0,0.5829029083251953,0.0,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,agg_distinct_visitor,1,0.32673720800084993,,,,0,0,0.5838413238525391,0.0,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,agg_distinct_visitor,2,0.2796060840191785,,,,0,0,0.5830593109130859,0.0,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,agg_distinct_visitor,3,0.37725258301361464,,,,0,0,0.5832939147949219,0.0,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,agg_distinct_visitor,4,0.31105204101186246,,,,0,0,0.5834245681762695,0.1,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+s3dataloader_athena,large_result_243323,0,45.57368170900736,45.5736808340007,,,243323,92,416.5494146347046,0.1,0,0,,awswrangler via DataLoader
+s3dataloader_athena,large_result_243323,1,55.92203516699374,55.92203420799342,,,243323,92,416.2600345611572,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,large_result_243323,2,44.95872750002309,44.9587265419832,,,243323,92,416.14333724975586,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,large_result_243323,3,53.731370958994376,53.73137008299818,,,243323,92,416.1655969619751,1.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,large_result_243323,4,54.281195791991195,54.28119504201459,,,243323,92,416.7949228286743,0.1,0,0,,awswrangler via DataLoader
+pyathena,large_result_243323,0,416.63510916699306,10.220753165980568,399.6725822080043,6.741745790990535,243323,92,1109.4060697555542,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,large_result_243323,1,406.19257879201905,9.952293500013184,389.7623861669854,6.477882415987551,243323,92,1109.4494524002075,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,large_result_243323,2,401.04390845799935,10.002460999996401,384.78352412499953,6.257905333011877,243323,92,1109.4836196899414,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,large_result_243323,3,423.2682630000054,10.324776916997507,406.0821412090154,6.8613300409924705,243323,92,1109.4596433639526,1.9,1,0,,default Cursor (GetQueryResults API)
+pyathena,large_result_243323,4,422.57040524997865,10.220696832984686,405.61761479100096,6.732068332989002,243323,92,1109.4131002426147,0.0,1,0,,default Cursor (GetQueryResults API)
+boto3_athena,large_result_243323,0,308.2720776250062,6.7480622500006575,295.19584737499827,6.328158040996641,243323,92,1116.4336233139038,0.0,258,0,,StartQueryExecution + GetQueryResults
+boto3_athena,large_result_243323,1,315.3504446670122,8.312346708000405,300.677327124984,6.360762500000419,243323,92,1116.445315361023,0.1,261,0,,StartQueryExecution + GetQueryResults
+boto3_athena,large_result_243323,2,310.55166437500156,8.348129040998174,295.51825566700427,6.6852629159984645,243323,92,1116.4626188278198,0.1,261,0,,StartQueryExecution + GetQueryResults
+boto3_athena,large_result_243323,3,482.8291925419762,8.341845999995712,467.8190264579898,6.668312124995282,243323,92,1116.4482564926147,0.0,261,0,,StartQueryExecution + GetQueryResults
+boto3_athena,large_result_243323,4,430.4304638750036,8.323659083980601,415.3125735000067,6.794216124981176,243323,92,1116.40882396698,0.1,261,0,,StartQueryExecution + GetQueryResults
+duckdb_s3,large_result_243323,0,11.921819290990243,11.921817417023703,,,243323,92,896.9580230712891,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,large_result_243323,1,11.791084707976552,11.791082584008109,,,243323,92,896.9567794799805,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,large_result_243323,2,11.892145499994513,11.892143749981187,,,243323,92,896.9587144851685,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,large_result_243323,3,11.801208165998105,11.80120616601198,,,243323,92,896.9568510055542,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,large_result_243323,4,11.804360249981983,11.804358166991733,,,243323,92,896.9574460983276,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+metabase,large_result_243323,0,0.3275394590164069,,,,0,0,0.609375,0.1,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,large_result_243323,1,0.2557586250186432,,,,0,0,0.5838422775268555,0.1,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,large_result_243323,2,0.2761969580024015,,,,0,0,0.5834331512451172,0.1,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,large_result_243323,3,0.28945454201311804,,,,0,0,0.5833406448364258,0.1,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,large_result_243323,4,0.250574042001972,,,,0,0,0.5831880569458008,0.1,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+s3dataloader_athena,chunk_default_200000,0,70.110674208001,70.11067320802249,,,200000,92,385.2873239517212,0.1,0,0,,awswrangler via DataLoader
+s3dataloader_athena,chunk_default_200000,1,43.371191000012914,43.37118995800847,,,200000,92,385.2789306640625,0.1,0,0,,awswrangler via DataLoader
+s3dataloader_athena,chunk_default_200000,2,38.705839458008995,38.705838416994084,,,200000,92,492.9375,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,chunk_default_200000,3,41.299794875027146,41.29979404201731,,,200000,92,384.65720653533936,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,chunk_default_200000,4,41.31194620899623,41.31194320900249,,,200000,92,385.28085136413574,0.1,0,0,,awswrangler via DataLoader
+pyathena,chunk_default_200000,0,315.03273483301746,10.35357545799343,299.57423725002445,5.104904249979882,200000,92,909.9053936004639,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,chunk_default_200000,1,332.49823487500544,12.138313332980033,315.1562473330123,5.203655041987076,200000,92,911.3723306655884,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,chunk_default_200000,2,348.21945733300527,10.08297279200633,333.13654912498896,4.99992316699354,200000,92,909.5642805099487,1.9,1,0,,default Cursor (GetQueryResults API)
+pyathena,chunk_default_200000,3,372.87788920800085,10.270514000003459,357.6085433749831,4.998821124987444,200000,92,909.6764640808105,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,chunk_default_200000,4,360.51942633400904,11.844424042006722,343.54272291701636,5.132258416007971,200000,92,909.5590496063232,0.0,1,0,,default Cursor (GetQueryResults API)
+boto3_athena,chunk_default_200000,0,309.21950654199463,8.4405390000029,295.6375917920086,5.14134745899355,200000,92,911.8157625198364,0.1,218,0,,StartQueryExecution + GetQueryResults
+boto3_athena,chunk_default_200000,1,308.79913295799633,7.941904292005347,295.286728667008,5.570476624998264,200000,92,912.329122543335,0.1,217,0,,StartQueryExecution + GetQueryResults
+boto3_athena,chunk_default_200000,2,277.63664829099434,9.440194583992707,262.7966014999838,5.399839874997269,200000,92,912.14723777771,0.1,220,0,,StartQueryExecution + GetQueryResults
+boto3_athena,chunk_default_200000,3,265.5940426660236,7.855606791010359,252.75314533297205,4.985282208013814,200000,92,912.5835428237915,0.0,217,0,,StartQueryExecution + GetQueryResults
+boto3_athena,chunk_default_200000,4,276.60753174999263,8.357838957977947,262.9492209579912,5.300448708003387,200000,92,912.0889949798584,0.0,218,0,,StartQueryExecution + GetQueryResults
+duckdb_s3,chunk_default_200000,0,9.808975208987249,9.808973541017622,,,200000,92,737.3259954452515,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,chunk_default_200000,1,9.85850699999719,9.858504959003767,,,200000,92,737.3256425857544,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,chunk_default_200000,2,10.005541082995478,10.005539083009353,,,200000,92,737.3272466659546,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,chunk_default_200000,3,9.901216707978165,9.901213041011943,,,200000,92,737.3270101547241,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,chunk_default_200000,4,10.188636959006544,10.188635250000516,,,200000,92,737.3266487121582,0.1,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+metabase,chunk_default_200000,0,0.2894917920057196,,,,0,0,0.5836677551269531,0.0,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,chunk_default_200000,1,0.28361149999545887,,,,0,0,0.5833883285522461,0.1,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,chunk_default_200000,2,0.29096683298121206,,,,0,0,0.5833749771118164,0.0,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,chunk_default_200000,3,0.27647541600163095,,,,0,0,0.5828981399536133,0.0,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+metabase,chunk_default_200000,4,0.34673074999591336,,,,0,0,0.5832748413085938,0.1,0,0,JSONDecodeError: Expecting value: line 1 column 1 (char 0),
+s3dataloader_athena,chunk_size_10000,0,169.38139075000072,,169.35551616700832,0.025867958989692852,200000,92,46.83384323120117,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,chunk_size_10000,1,53.93889379201573,,53.77700937501504,0.16188112497911789,200000,92,415.78125,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,chunk_size_10000,2,72.60193391700159,,72.5776125829725,0.024320249998709187,200000,92,85.078125,0.1,0,0,,awswrangler via DataLoader
+s3dataloader_athena,chunk_size_10000,3,59.026535624987446,,59.00343216699548,0.023102416977053508,200000,92,46.83542442321777,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,chunk_size_10000,4,56.01965149998432,,55.99426387497806,0.02537533300346695,200000,92,46.68735694885254,0.1,0,0,,awswrangler via DataLoader
+pyathena,chunk_size_10000,0,337.48683904198697,9.986662665993208,327.40331533300923,0.09684129199013114,200000,92,149.08576583862305,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,chunk_size_10000,1,343.1474430410017,10.29472095897654,332.80457083298825,0.048118333012098446,200000,92,166.875,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,chunk_size_10000,2,335.9219586669933,10.19561741698999,325.6873149999883,0.039011624990962446,200000,92,147.88801383972168,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,chunk_size_10000,3,338.3656080420187,10.01550666699768,328.30886554098106,0.041221374995075166,200000,92,148.07213592529297,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,chunk_size_10000,4,532.704550333001,10.131815915985499,522.5321412500052,0.04057874999125488,200000,92,148.7496747970581,0.1,1,0,,default Cursor (GetQueryResults API)
+boto3_athena,chunk_size_10000,0,282.76166929199826,9.432359291997273,273.2965255829913,0.03276983299292624,200000,92,127.60622978210449,0.1,220,0,,StartQueryExecution + GetQueryResults
+boto3_athena,chunk_size_10000,1,283.934798125003,8.559646999987308,275.343216749985,0.03192079099244438,200000,92,140.578125,0.0,216,0,,StartQueryExecution + GetQueryResults
+boto3_athena,chunk_size_10000,2,293.5012641249923,8.400544583011651,285.0661273750011,0.03457887499826029,200000,92,127.15330123901367,0.0,218,0,,StartQueryExecution + GetQueryResults
+boto3_athena,chunk_size_10000,3,257.4622021660034,8.402704540989362,249.02785683399998,0.031626665993826464,200000,92,127.15267372131348,0.0,218,0,,StartQueryExecution + GetQueryResults
+boto3_athena,chunk_size_10000,4,264.7253849580011,8.908086083014496,255.78568375000032,0.031603416020516306,200000,92,127.15516662597656,0.1,219,0,,StartQueryExecution + GetQueryResults
+duckdb_s3,chunk_size_10000,0,72.11565745799453,,72.07419195800321,0.04138745801174082,200000,92,139.32770156860352,0.1,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,chunk_size_10000,1,36.08730812498834,,36.05402695800876,0.03327837499091402,200000,92,139.31994342803955,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,chunk_size_10000,2,36.10669387498638,,36.0712685000035,0.03542337499675341,200000,92,139.312593460083,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,chunk_size_10000,3,35.246579792001285,,35.212445208017016,0.03413258399814367,200000,92,139.31817245483398,0.1,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,chunk_size_10000,4,35.566963374993065,,35.53206037500058,0.03490133298328146,200000,92,139.31845569610596,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+s3dataloader_athena,chunk_size_50000,0,43.41485279198969,,43.404329082986806,0.01052262500161305,200000,92,53.707356452941895,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,chunk_size_50000,1,43.76506508298917,,43.753662000002805,0.011401834024582058,200000,92,53.40810012817383,0.1,0,0,,awswrangler via DataLoader
+s3dataloader_athena,chunk_size_50000,2,45.343085041997256,,45.33251941599883,0.010564333002548665,200000,92,53.15755367279053,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,chunk_size_50000,3,41.813523666001856,,41.80306854099035,0.010454375005792826,200000,92,55.517592430114746,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,chunk_size_50000,4,47.06660837499658,,47.05611345899524,0.010493499983567744,200000,92,53.060890197753906,0.1,0,0,,awswrangler via DataLoader
+pyathena,chunk_size_50000,0,318.84695529099554,10.007864625018556,308.822268332995,0.01680895799654536,200000,92,365.23648262023926,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,chunk_size_50000,1,342.0083050420217,10.016637708002236,331.97093683399726,0.02071533299749717,200000,92,365.04092025756836,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,chunk_size_50000,2,339.8905224170012,10.171560084010707,329.6975327919936,0.02133916600723751,200000,92,363.599871635437,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,chunk_size_50000,3,336.5448611669999,10.014581499999622,326.5081611669739,0.02210216602543369,200000,92,364.78273582458496,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,chunk_size_50000,4,335.2600962090073,9.045927875005873,326.1522673330037,0.0618836669891607,200000,92,363.58045768737793,0.1,1,0,,default Cursor (GetQueryResults API)
+boto3_athena,chunk_size_50000,0,294.66950187500333,8.31862945802277,286.3297823750181,0.02107241700286977,200000,92,278.7417812347412,0.0,218,0,,StartQueryExecution + GetQueryResults
+boto3_athena,chunk_size_50000,1,268.23821204100386,7.757872417016188,260.4463816249918,0.03394024999579415,200000,92,275.8229446411133,0.0,217,0,,StartQueryExecution + GetQueryResults
+boto3_athena,chunk_size_50000,2,266.4306436670013,8.320580166997388,258.09029154098243,0.019755209010327235,200000,92,277.7455530166626,0.1,218,0,,StartQueryExecution + GetQueryResults
+boto3_athena,chunk_size_50000,3,271.09688008300145,9.35329095798079,261.72157491600956,0.02199704200029373,200000,92,275.19515895843506,0.1,220,0,,StartQueryExecution + GetQueryResults
+boto3_athena,chunk_size_50000,4,275.066449209,8.201903541979846,266.8444912919949,0.02003779201186262,200000,92,277.70955753326416,0.0,218,0,,StartQueryExecution + GetQueryResults
+duckdb_s3,chunk_size_50000,0,13.848909666005056,,13.836587917001452,0.012319749977905303,200000,92,240.18642044067383,0.1,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,chunk_size_50000,1,13.606756208988372,,13.594627040991327,0.012127207999583334,200000,92,240.1833152770996,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,chunk_size_50000,2,13.889954207988922,,13.877579167019576,0.012372708006296307,200000,92,240.18327713012695,0.1,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,chunk_size_50000,3,13.452517041005194,,13.440093708020868,0.01242079198709689,200000,92,240.18262004852295,0.1,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+duckdb_s3,chunk_size_50000,4,13.64590608299477,,13.621859000006225,0.02404429198941216,200000,92,240.18326568603516,0.0,0,0,,parquet_scan s3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data/*.parquet
+s3dataloader_athena,chunk_size_100000,0,40.6905465000018,,40.68154125000001,0.009004040999570861,200000,92,68.20055294036865,0.1,0,0,,awswrangler via DataLoader
+s3dataloader_athena,chunk_size_100000,1,42.401096834015334,,42.392231666017324,0.008864083996741101,200000,92,68.07948875427246,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,chunk_size_100000,2,47.83624658398912,,47.82734133300255,0.008903832989744842,200000,92,67.6633529663086,2.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,chunk_size_100000,3,52.00678495797911,,51.99734854200506,0.009435250016395003,200000,92,67.48501300811768,0.0,0,0,,awswrangler via DataLoader
+s3dataloader_athena,chunk_size_100000,4,46.93415491702035,,46.92525787500199,0.008895917009795085,200000,92,68.2243881225586,0.0,0,0,,awswrangler via DataLoader
+pyathena,chunk_size_100000,0,364.05039683298673,10.083283291984117,353.92840224999236,0.03869345900602639,200000,92,635.4105186462402,0.1,1,0,,default Cursor (GetQueryResults API)
+pyathena,chunk_size_100000,1,352.56788479100214,10.721901332988637,341.823647791025,0.02231825000490062,200000,92,628.982307434082,0.0,1,0,,default Cursor (GetQueryResults API)
+pyathena,chunk_size_100000,2,84.13237429098808,,,,0,0,110.96191215515137,0.4,0,0,"OperationalError: Could not connect to the endpoint URL: ""https://athena.ap-south-1.amazonaws.com/""",
+pyathena,chunk_size_100000,3,12.557328750001034,,,,0,0,0.1878948211669922,0.1,0,0,"DatabaseError: Could not connect to the endpoint URL: ""https://athena.ap-south-1.amazonaws.com/""",
+pyathena,chunk_size_100000,4,7.51668341702316,,,,0,0,0.1872882843017578,0.1,0,0,"DatabaseError: Could not connect to the endpoint URL: ""https://athena.ap-south-1.amazonaws.com/""",
+boto3_athena,chunk_size_100000,0,841.9931164169975,8.758864333998645,833.2153914589726,0.0188482079829555,200000,92,490.1595096588135,0.0,215,0,,StartQueryExecution + GetQueryResults
+boto3_athena,chunk_size_100000,1,623.2786332089745,8.4483642920095,614.8035012909968,0.02674837497761473,200000,92,492.0675449371338,0.1,217,0,,StartQueryExecution + GetQueryResults
+boto3_athena,chunk_size_100000,2,491.89894641700084,8.060266249987762,483.8203124589927,0.018347500008530915,200000,92,489.6777868270874,0.1,214,0,,StartQueryExecution + GetQueryResults
+boto3_athena,chunk_size_100000,3,485.35813504099497,10.63659966699197,474.70096295900294,0.020553250011289492,200000,92,492.86653327941895,0.1,219,0,,StartQueryExecution + GetQueryResults
+boto3_athena,chunk_size_100000,4,591.7846006249893,7.654311374993995,584.1023296669882,0.02793908299645409,200000,92,490.4375886917114,0.0,215,0,,StartQueryExecution + GetQueryResults
+duckdb_s3,chunk_size_100000,0,0.21816275001037866,,,,0,0,0.109375,0.1,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM (SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                                     ^",
+duckdb_s3,chunk_size_100000,1,0.27823666599579155,,,,0,0,0.0625,2.1,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM (SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                                     ^",
+duckdb_s3,chunk_size_100000,2,0.9292158749885857,,,,0,0,0.037331581115722656,2.0,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM (SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                                     ^",
+duckdb_s3,chunk_size_100000,3,0.21593916698475368,,,,0,0,0.037293434143066406,2.1,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM (SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                                     ^",
+duckdb_s3,chunk_size_100000,4,0.2558297500072513,,,,0,0,0.03720378875732422,0.1,0,0,"HTTPException: HTTP Error: HTTP GET error reading 's3://airflow-etl-db/production_raw_dump/leads-db/visitorlogs/data' in region 'ap-south-1' (HTTP 403 Forbidden)
+
+AccessDenied: User: arn:aws:iam::354064748517:user/lekha.n@asbl.in is not authorized to perform: s3:ListBucket on resource: ""arn:aws:s3:::airflow-etl-db"" with an explicit deny in a resource-based policy
+
+Authentication Failure - this is usually caused by invalid or missing credentials.
+* Credentials are provided, but they did not work.
+* See https://duckdb.org/docs/stable/extensions/httpfs/s3api.html
+
+LINE 1: SELECT * FROM (SELECT * FROM parquet_scan('s3://airflow-etl-db/production_raw_dump/leads...
+                                     ^",

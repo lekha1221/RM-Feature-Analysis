@@ -1,0 +1,8 @@
+# dataSource runtime
+duckdb
+boto3
+pandas
+python-dotenv
+
+# Required for the "athena" and "wrangler" engines (optional for duckdb-only use)
+awswrangler
